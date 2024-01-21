@@ -1,0 +1,29 @@
+{
+  "name": "wired-notes",
+  "version": "1.0.0",
+  "description": "A simple full stack note taking application",
+  "main": "server.js",
+  "scripts": {
+    "test": "N/A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanRC/Wired-Notes.git"
+  },
+  "keywords": [
+    "Express",
+    "Note-Taking",
+    "node.js"
+  ],
+  "author": "Evan Carlson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EvanRC/Wired-Notes/issues"
+  },
+  "homepage": "https://github.com/EvanRC/Wired-Notes#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "uuid": "^9.0.1"
+  }
+}
