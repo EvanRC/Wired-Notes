@@ -3,11 +3,11 @@ const express = require('express'); //  Importing the express libray to create t
 const fs = require('fs'); // File system module to read and write files to db.json
 const path = require('path'); // Path modules to work with file and directory paths
 const { v4: uuidv4 } = require('uuid'); // Importing UUID to generate inique identifiers 
-const app = express (); // Creating an instance of express
+const app = express(); // Creating an instance of express
 const PORT = process.env.PORT || 3000; // Setting the port to useeither and enviroment variable PORT or 3000 if not set
 
 // Middleware
-app.use(express.urlencoded({ extended : true })); // Middleware for passing URL-encoded bodies
+app.use(express.urlencoded({ extended: true })); // Middleware for passing URL-encoded bodies
 app.use(express.json()); // Middleware for parsing JSOn bodies
 app.use(express.static('public')); // Serving static files (HTML, CSS, JS)
 
@@ -50,7 +50,7 @@ app.post('/api/notes', (req, res) => {
         notes.push(newNote); // Add the new note to the existing array
 
         // Write the updated ntes back to the JSON file
-        fs.writeFile(DB_FILE, JSON.stringify(notes, null, 2), (err) => { 
+        fs.writeFile(DB_FILE, JSON.stringify(notes, null, 2), (err) => {
             if (err) {
                 console.error(err);
                 return res.status(500).json({ message: 'Error writing to db.json' });
@@ -74,7 +74,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
         let notes = JSON.parse(data);
         const filterNotes = notes.filter((note) => note.id !== noteId);
-        
+
         // Write the updated notes back to the JSON file
         fs.writeFile(path.join(__dirname, 'db/db.json'), JSON.stringify(filterNotes, null, 2), (err) => {
             if (err) {
@@ -82,7 +82,7 @@ app.delete('/api/notes/:id', (req, res) => {
                 return res.status(500).json({ message: 'Error writing to db.json' })
             }
             // IF successful, send a success message
-            res.status(200).json({ msg: 'Note deleted'});
+            res.status(200).json({ msg: 'Note deleted' });
         });
     });
 });
