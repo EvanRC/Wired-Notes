@@ -1,8 +1,6 @@
 # Wired Notes
-![Uploading logo.sv<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="300px" width="200px">
-<rect x="50" y="50" width="100" height="100" fill="blue" />
-<text x="50%" y="50%" dy="-50px" text-anchor="middle" dominant-baseline="central" fill="yellow" font-size="20px">WN</text>
-</svg>g…]()
+![image](https://github.com/EvanRC/Wired-Notes/assets/124648885/582dfad5-babd-45cc-bf7c-1d00c4f405bc)
+
 
 
 ## License Badge/n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
