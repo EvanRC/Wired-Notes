@@ -1,5 +1,8 @@
 # Wired Notes
-![image](https://github.com/EvanRC/Wired-Notes/assets/124648885/b7974a00-9f68-437a-bc96-7f118ae74d7b)
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="300px" width="200px">
+<rect x="50" y="50" width="100" height="100" fill="blue" />
+<text x="50%" y="50%" dy="-50px" text-anchor="middle" dominant-baseline="central" fill="yellow" font-size="20px">WN</text>
+</svg>
 
 
 
@@ -40,7 +43,7 @@ N/A
         Click on the link above for more information.
 
 ## Website Photo:
-
+![image](https://github.com/EvanRC/Wired-Notes/assets/124648885/b7974a00-9f68-437a-bc96-7f118ae74d7b)
 
 ## Questions?
 
